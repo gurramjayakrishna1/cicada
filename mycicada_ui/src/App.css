@@ -1,0 +1,691 @@
+/* WGU LoginPage specific styles */
+.wgu-login-bg {
+  min-height: 100vh;
+  display: flex;
+  background: linear-gradient(135deg, #eaf7f2 0%, #f3f7fa 60%, #f3f7fa 100%);
+}
+.wgu-login-panel {
+  width: 420px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eaf7f2 0%, #f8fafd 90%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 2px 0 18px 0 rgba(46,125,50,0.05);
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding-top: 60px;
+  z-index: 1;
+  /* ADDED: */
+  border-right: 1px solid #e3e6ea;
+}
+
+@media (max-width: 900px) {
+  .wgu-login-bg { flex-direction: column; }
+  .wgu-login-panel {
+    width: 100vw; min-height: auto; border-radius: 0; padding-top: 28px; box-shadow: none; border-right: none;
+  }
+}
+
+.wgu-login-logo {
+  width: 160px;
+  margin-bottom: 12px;
+  margin-left: -6px;
+}
+.wgu-login-title {
+  color: #003865;
+  font-size: 1.7rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+.wgu-login-subtitle {
+  color: #197278;
+  font-size: 1.09rem;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.wgu-login-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 28px 0 rgba(0,56,101,0.09);
+  padding: 38px 34px 30px 34px;
+  width: 94%;
+  max-width: 370px;
+  margin-top: 15px;
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.wgu-login-label {
+  font-weight: 600;
+  color: #003865;
+  margin-bottom: 7px;
+  margin-top: 8px;
+  display: block;
+}
+.wgu-login-input {
+  border: 1.3px solid #d1d5db;
+  border-radius: 7px;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  font-size: 1.08rem;
+  background: #f4f8fc;
+  width: 100%;
+  transition: border 0.17s, box-shadow 0.14s;
+}
+.wgu-login-input:focus {
+  border: 1.7px solid #197278;
+  box-shadow: 0 0 0 1.7px #19727844;
+  outline: none;
+}
+.wgu-login-btn {
+  background: linear-gradient(90deg, #003865 0%, #38ef7d 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 0;
+  font-size: 1.13rem;
+  font-weight: 700;
+  margin-top: 12px;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 2px 8px 0 rgba(56,239,125,0.13);
+  transition: background 0.15s, transform 0.13s;
+}
+.wgu-login-btn:hover {
+  background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
+  transform: translateY(-2px) scale(1.025);
+}
+.wgu-login-link {
+  color: #197278;
+  font-weight: 700;
+  margin-left: 6px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-decoration: underline;
+  font-size: 1rem;
+  transition: color 0.13s;
+}
+.wgu-login-link:hover { color: #11998e; }
+.wgu-login-error {
+  color: #d90429;
+  background: #fff0f3;
+  border: 1px solid #fcbaba;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  padding: 8px 11px;
+  text-align: center;
+}
+
+/* --- WGU Header (for ALL pages) --- */
+.header-blue {
+  background: #003865;
+  height: 56px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wgu-header-logo-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px 0 28px 0;
+}
+
+.wgu-header-logo {
+  height: 60px;
+  width: auto;
+   user-drag: none;
+  -webkit-user-drag: none;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.09));
+}
+
+.wgu-header-main {
+  background: #003865;
+  width: 100vw;
+  min-height: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  z-index: 20;
+  /* Optionally add box-shadow for depth */
+}
+
+.wgu-login-bg-centered {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: linear-gradient(170deg, #fff 0%, #eaf7f2 35%, #f3f7fa 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* No justify-content:center */
+  padding-top: 24px;   /* Adjust this as needed (try 24px for even less gap) */
+}
+
+
+.wgu-login-center-card {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 10px 38px 0 rgba(25,56,101,0.13), 0 1.5px 7px 0 rgba(46,125,50,0.07);
+  width: 100%;
+  max-width: 420px;
+  padding: 40px 38px 30px 38px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.8rem;
+}
+
+.wgu-login-form-modern {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.wgu-login-label-modern {
+  font-weight: 600;
+  color: #003865;
+  font-size: 1.07rem;
+  margin-bottom: 4px;
+  margin-top: 12px;
+}
+
+.wgu-login-input-modern {
+  border: 1.2px solid #d1d5db;
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-size: 1.06rem;
+  background: #fafbfc;
+  width: 100%;
+  margin-bottom: 2px;
+  transition: border 0.17s, box-shadow 0.13s;
+  color: #003865;
+}
+
+.wgu-login-input-modern:focus {
+  border: 1.7px solid #197278;
+  outline: none;
+  box-shadow: 0 0 0 2px #19727844;
+}
+
+.wgu-login-btn-modern {
+  background: linear-gradient(90deg, #003865, #197278 60%, #38ef7d 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 0;
+  font-size: 1.09rem;
+  font-weight: 700;
+  margin-top: 18px;
+  cursor: pointer;
+  width: 100%;
+  box-shadow: 0 2px 8px 0 rgba(56,239,125,0.09);
+  transition: background 0.16s, transform 0.13s;
+}
+
+.wgu-login-btn-modern:hover {
+  background: linear-gradient(90deg, #197278, #003865 80%, #38ef7d 100%);
+  transform: translateY(-2px) scale(1.025);
+}
+
+.wgu-login-bottom-modern {
+  margin-top: 16px;
+  text-align: center;
+  color: #003865;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.wgu-login-link-modern {
+  color: #197278;
+  font-weight: 700;
+  margin-left: 8px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  text-decoration: underline;
+  font-size: 1rem;
+  transition: color 0.13s;
+}
+
+.wgu-login-link-modern:hover { color: #11998e; }
+
+.wgu-login-center-container {
+  min-height: 80vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+/* Only one definition per class! Remove duplicates above if any. */
+
+@media (max-width: 650px) {
+  .wgu-login-panel, .wgu-login-card { padding: 18px 3vw 18px 3vw; }
+  .wgu-login-logo { width: 125px; }
+  .wgu-login-title { font-size: 1.35rem; }
+  .wgu-login-subtitle { font-size: 1rem; }
+}
+
+.wgu-session-card {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 10px 36px 0 rgba(0,56,101,0.13), 0 1.5px 7px 0 rgba(46,125,50,0.07);
+  width: 100%;
+  max-width: 500px;
+  margin: 60px auto 0 auto;
+  padding: 38px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.8rem;
+}
+
+.wgu-session-header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.wgu-session-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #003865;
+  letter-spacing: 0.5px;
+}
+
+.wgu-session-subtitle {
+  color: #197278;
+  font-size: 1.07rem;
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+.wgu-session-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.wgu-session-btn {
+  padding: 13px 0;
+  font-size: 1.12rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  width: 100%;
+  box-shadow: 0 1.5px 8px 0 rgba(30,100,180,0.05);
+  transition: background 0.15s, box-shadow 0.13s, transform 0.13s;
+  cursor: pointer;
+}
+
+.wgu-btn-blue {
+  background: linear-gradient(90deg,#003865,#197278 80%,#11998e);
+  color: #fff;
+}
+.wgu-btn-blue:hover { background: linear-gradient(90deg,#197278,#003865 90%,#38ef7d); }
+
+.wgu-btn-green {
+  background: linear-gradient(90deg,#11998e,#38ef7d 100%);
+  color: #fff;
+}
+.wgu-btn-green:hover { background: linear-gradient(90deg,#38ef7d,#11998e); }
+
+.wgu-btn-yellow {
+  background: linear-gradient(90deg,#f8cd32 60%,#fffbe6 100%);
+  color: #7a6000;
+}
+.wgu-btn-yellow:hover { background: linear-gradient(90deg,#ffe085 0%,#f8cd32 100%); color: #003865; }
+
+.wgu-btn-logout {
+  background: #fff0f0;
+  color: #d90429;
+  border: 1.5px solid #fcbaba;
+  font-weight: 800;
+  margin-top: 16px;
+}
+.wgu-btn-logout:hover { background: #ffd6db; color: #b00020; border: 1.5px solid #d90429; }
+
+.wgu-session-inner {
+  text-align: left;
+}
+
+.wgu-session-back {
+  background: none;
+  border: none;
+  color: #197278;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 14px;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.wgu-session-topic {
+  margin-bottom: 18px;
+}
+.wgu-session-topic-title {
+  color: #003865;
+  font-weight: 700;
+  margin-bottom: 6px;
+  font-size: 1.09rem;
+}
+
+.wgu-session-objective-btn {
+  background: #eaf7f2;
+  border: none;
+  border-radius: 7px;
+  margin-bottom: 7px;
+  margin-right: 5px;
+  padding: 8px 12px;
+  color: #003865;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.14s;
+  width: 100%;
+  text-align: left;
+}
+.wgu-session-objective-btn:hover { background: #d6f5ea; color: #197278; }
+
+.wgu-session-table-scroll {
+  max-height: 360px;
+  overflow-y: auto;
+  margin-top: 12px;
+  border-radius: 12px;
+  background: #f8fafb;
+  box-shadow: 0 2px 10px 0 rgba(0,56,101,0.08);
+}
+
+.wgu-session-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 1.05rem;
+  background: #f8fafb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.wgu-session-table th, .wgu-session-table td {
+  padding: 13px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e3e6ea;
+}
+.wgu-session-table th {
+  background: #eaf7f2;
+  color: #003865;
+  font-weight: 700;
+  border-bottom: 2px solid #b3e4dc;
+  font-size: 1.08rem;
+}
+
+.wgu-session-table tr:hover td {
+  background: #f0f8ff;
+}
+
+
+@media (max-width: 600px) {
+  .wgu-session-card { padding: 20px 2vw; }
+  .wgu-session-title { font-size: 1.12rem; }
+}
+
+.wgu-btn-proficiency {
+  background: linear-gradient(90deg, #197278, #003865 70%, #38ef7d 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.09rem;
+  padding: 16px 0;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: background 0.16s, box-shadow 0.13s;
+  box-shadow: 0 1px 6px 0 rgba(30,100,180,0.10);
+}
+.wgu-btn-proficiency:hover {
+  background: linear-gradient(90deg, #003865 50%, #38ef7d 100%);
+}
+
+.wgu-pill-score {
+  display: inline-block;
+  min-width: 56px;
+  padding: 6px 15px;
+  border-radius: 18px;
+  background: linear-gradient(90deg, #197278, #38ef7d 90%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.01rem;
+  text-align: center;
+  box-shadow: 0 1px 3px 0 rgba(25,114,120,0.10);
+}
+.wgu-session-full-proficiency {
+  width: 98vw;
+  max-width: 1700px;
+  margin: 0 auto 40px auto;
+  padding: 28px 2vw 48px 2vw;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.wgu-session-full-header {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.wgu-session-table-scroll-full {
+  width: 100%;
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(30,56,101,0.08);
+  padding: 16px 0 12px 0;
+  margin-bottom: 18px;
+}
+
+.wgu-session-table-full {
+  width: 100%;
+  min-width: 900px;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  font-size: 1.08rem;
+  border-collapse: collapse;
+}
+
+.wgu-session-table-full th, .wgu-session-table-full td {
+  padding: 14px 18px;
+  border: 1px solid #e3e6ea;
+  text-align: left;
+  background: #fff;
+  color: #003865;
+}
+
+.wgu-session-table-full th {
+  background: #e8f6fd;
+  color: #003865;
+  font-weight: 700;
+  font-size: 1.08rem;
+}
+
+.wgu-session-table-full tr:nth-child(even) td {
+  background: #f8fafc;
+}
+
+.wgu-chat-bg {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #eaf7f2 0%, #f3f7fa 60%, #fff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 42px;
+}
+
+.wgu-chat-card {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 40px 0 rgba(25,56,101,0.13), 0 2px 8px 0 rgba(46,125,50,0.07);
+  width: 100%;
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  min-height: 700px;
+  overflow: hidden;
+}
+
+.wgu-chat-header {
+  background: #003865;
+  color: #fff;
+  text-align: center;
+  padding: 26px 0 18px 0;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-bottom: 1.5px solid #eaf7f2;
+}
+
+.wgu-chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 28px 26px;
+  background: #f7fafc;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  color: #003865;
+}
+
+.wgu-chat-msg-row {
+  display: flex;
+}
+
+.wgu-chat-msg-user {
+  margin-left: auto;
+  background: linear-gradient(90deg,#003865 60%,#197278 100%);
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 18px 18px 4px 18px;
+  max-width: 75%;
+  word-break: break-word;
+  font-size: 1rem;
+  box-shadow: 0 2px 7px 0 rgba(0,56,101,0.09);
+}
+
+.wgu-chat-msg-tutor {
+  margin-right: auto;
+  background: #eaf7f2;
+  color: #003865;
+  padding: 14px 20px;
+  border-radius: 18px 18px 18px 4px;
+  max-width: 75%;
+  word-break: break-word;
+  font-size: 1rem;
+  box-shadow: 0 2px 7px 0 rgba(0,56,101,0.04);
+}
+
+.wgu-chat-meta {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #197278;
+  margin-bottom: 4px;
+  letter-spacing: 0.2px;
+}
+
+.wgu-chat-input-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  background: #fff;
+  border-top: 1.5px solid #eaf7f2;
+  padding: 22px 24px 22px 24px;
+}
+
+.wgu-chat-textarea {
+  flex: 1;
+  border: 1.5px solid #d1d5db;
+  border-radius: 10px;
+  padding: 14px 16px;
+  font-size: 1rem;
+  min-height: 58px;
+  resize: vertical;
+  font-family: 'JetBrains Mono', 'Fira Mono', 'Menlo', 'monospace', monospace;
+  background: #f5fafd;
+  transition: border 0.15s, box-shadow 0.12s;
+  color: #003865;
+}
+
+.wgu-chat-textarea:focus {
+  border: 1.5px solid #197278;
+  outline: none;
+  box-shadow: 0 0 0 2px #19727828;
+}
+
+.wgu-chat-send-btn {
+  background: linear-gradient(90deg,#003865 20%,#38ef7d 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  border: none;
+  border-radius: 8px;
+  padding: 13px 22px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(56,239,125,0.10);
+  transition: background 0.15s, transform 0.13s;
+}
+
+.wgu-chat-send-btn:disabled {
+  background: #b2bbc8;
+  color: #eee;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .wgu-chat-card {
+    border-radius: 0;
+    min-height: 100vh;
+    max-width: 100vw;
+  }
+  .wgu-chat-messages {
+    padding: 16px 8px;
+  }
+  .wgu-chat-header {
+    font-size: 1.2rem;
+    padding: 16px 0 11px 0;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .wgu-session-table-full { min-width: 640px; font-size: 0.97rem; }
+  .wgu-session-full-proficiency { padding: 14px 0 30px 0; }
+}
+
+@media (max-width: 650px) {
+  .wgu-session-table-full { min-width: 420px; font-size: 0.93rem; }
+  .wgu-session-full-header { padding-left: 5vw; }
+}
+
+
+@media (max-width: 600px) {
+  .wgu-session-table th, .wgu-session-table td {
+    font-size: 0.96rem;
+    padding: 8px 5px;
+  }
+}
+
